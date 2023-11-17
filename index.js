@@ -2,7 +2,7 @@ import express, { json, urlencoded } from "express";
 import { connect } from "mongoose";
 import cors from "cors";
 import dotenv from "dotenv"
-import userRouter from "../server/Routes/users.js";
+import Router from "./Routes/users.js";
 import Routes from "./Routes/Questions.js";
 import answerRoutes from "./Routes/Answers.js"
 
@@ -20,7 +20,7 @@ app.get("/",(req,res)=>{
     })
 })
 
-app.use("/user",userRouter)
+app.use("/user",Router)
 app.use("/question",Routes)
 app.use("/answer",answerRoutes)
 
