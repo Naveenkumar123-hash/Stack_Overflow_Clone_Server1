@@ -16,7 +16,7 @@ const QuestionSchema=new Schema({
         type:String,required:"Question must have an author"
     },
     askedOn:{
-        type:Date,default:Date.now()
+        type:Date,default:Date.now
     },
     userId:{
         type:String,
@@ -25,7 +25,7 @@ const QuestionSchema=new Schema({
         answerBody:String,
         userAnswered:String,
         userId:String,
-        answeredOn:{type:Date,default:Date.now()}
+        answeredOn:{type:Date,default:Date.now}
     }]
 })
 

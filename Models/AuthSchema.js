@@ -24,7 +24,7 @@ const UserSchema=new Schema({
     },
     joinedon:{
         type:Date,
-        default:Date.now()
+        default:Date.now
     }
 })
 
